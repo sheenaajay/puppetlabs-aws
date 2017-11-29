@@ -32,6 +32,7 @@ supports_windows = false
 
 gem 'aws-sdk', '~> 3'
 gem 'retries'
+gem 'rubysl-resolv'
 
 group :development do
   gem 'puppet-lint',                        :require => false
@@ -43,6 +44,8 @@ group :development do
   gem 'rspec-puppet', '>= 2.3.2',           :require => false 
   gem 'rspec-puppet-facts',                 :require => false
   gem 'mocha', '< 1.2.0',                   :require => false
+  gem 'semantic_puppet',                    :require => false 
+  gem 'stdlib',                            :require => false
   gem 'simplecov',                          :require => false
   gem 'parallel_tests', '< 2.10.0',         :require => false if Gem::Version.new(RUBY_VERSION) < Gem::Version.new('2.0.0')
   gem 'parallel_tests',                     :require => false if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new('2.0.0')
